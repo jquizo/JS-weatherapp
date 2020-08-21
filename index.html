@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'>
+    <!-- Custom CSS -->
+    <link rel='stylesheet' href='css/style.css'>
+    <title>Weather App</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class='bg1 tile search-tile'>
+            <h2>Weather<span>Checker</span></h2>
+            <input type='text'  placeholder='Enter a city or postcode' id='searchBar' >
+            <button id='searchBtn'>Submit</button>
+            <!-- <input type='submit' value='Submit' >    -->
+            <h2 id="warning"></h2>
+        </div> <!--.search-tile-->
+        <div class='bg1 tile city-tile'>
+            <h2>Location</h2>
+            <p id='city'>-</p>
+        </div><!--.city-tile-->
+        <div class='bg2 tile wind-tile'>
+            <h2>Wind <i class='fas fa-wind'></i></i></h2>
+            <p id='wind'>-</p>
+        </div><!--wind-tile-->
+        <div class="bg1 tile humidity-tile ">
+            <h2>Humidity</h2>
+            <p id='humidity'>-</p>
+        </div><!--humidity-tile-->
+        <div class="bg1 tile temperature-tile">
+            <h2>Temperature <i class='fas fa-temperature-high'></i></h2>
+            <p id='description'></p>
+            <p id='temp-max'>High: -&deg;C</p>
+            <p id='temp-min'>Low: -&deg;C</p>
+            <p id='weatherIcon'><img class='weather-icon-image'src='./icons/unknown.png'></p>
+        </div><!--.temperature-tile-->
+        <div class='bg2 tile '>
+
+        </div>
+        <div class='bg2 tile '>
+            <p>Images from <a href="https://unsplash.com/">Unsplash</a></p>
+        </div>
+        <div class='bg1 tile'>
+            <p>Powered by <a class="poweredbylink" href="https://openweathermap.org/api" target="_blank">OpenweatherMaps</a> </p>
+        </div>
+        <div class='bg2 tile last-tile'>
+           <p>Website by Jason Requizo</p>
+        </div>
+    </div>  <!--.container-->
+
+    <script src='js/index.js' defer></script>
+</body>
+</html>
